@@ -1,0 +1,129 @@
+* {
+    font-family: 'Pretendard', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: auto;
+    max-width: 960px;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #191F28;
+}
+a:visited {
+    color: #191F28;
+}
+a:hover {
+    color: #FB9905;
+}
+.navi_top {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menus {
+    display: flex;
+    justify-content: space-between;
+}
+.menus > * {
+    padding-left: 40px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+}
+.copyright {
+    font-size: 13px;
+    font-weight: 500;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+h1 {
+    font-size: 24px;
+    font-weight: 500;
+    animation: slideUp 0.5s ease-in-out;
+    padding-bottom: 4px;
+}
+@keyframes slideUp {
+    0% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+        transform: translateY(100%);
+    }
+    95% {
+        transform: translateY(0%);
+    }
+    100% {
+        clip-path: polygon(0% 00%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.about_me {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 120px;
+    width: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 80px;
+}
+.sub_container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.title {
+    font-size: 16px;
+    font-weight: 500;
+}
+.sub_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+.contents_career {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    padding-bottom: 8px;
+}
+ul {
+    margin-left: 1.2em;
+}
+.contents {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 200%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.period {
+    font-size: 14px;
+    font-weight: 400;
+    color: #8B95A1;
+}

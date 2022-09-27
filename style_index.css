@@ -48,28 +48,13 @@ h1 {
     font-size: 14px;
     margin-left: 8px;
 }
-.down_container {
-    display: flex;
-    justify-content: center;
-    margin-top: 80px;
-}
-.down {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.down_works {
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: 8px;
-}
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    padding-top: 80px;
+    gap: 24px;
+    margin: 80px 0;
 }
-.projects a {
+.project {
     overflow: hidden;
 }
 .projects img {
@@ -79,4 +64,20 @@ h1 {
 .projects img:hover {
     transform: scale(1.03);
     transition: transform 0.2s ease-in-out;
+}
+.text_container3 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 24px 0px 40px 0px
+}
+h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.body1 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    color: #555;
 }

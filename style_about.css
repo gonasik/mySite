@@ -30,51 +30,43 @@ h1 {
     font-weight: 400;
     line-height: 150%;
 }
-.about_me {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-top: 120px;
-    width: 100%;
-}
-.container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin-bottom: 80px;
-}
-.sub_container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-.title {
-    font-size: 16px;
-    font-weight: 500;
-}
-.sub_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-}
-.contents_career {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 150%;
-    padding-bottom: 8px;
-}
-.contents {
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 200%;
-}
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.7fr;
+    gap: 40px;
+    margin: 120px 0 40px 0;
 }
-.period {
-    font-size: 14px;
+.year_frame {
+    display: flex;
+    justify-content: right;
+}
+.year {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.month {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+h2 {
+    font-weight: 500;
+    font-size: 16px;
+}
+h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+.body1 {
     font-weight: 400;
-    color: #8B95A1;
+    font-size: 15px;
+    line-height: 150%;
+    color: #555;
 }

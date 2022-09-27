@@ -39,6 +39,20 @@ h1 {
       transform: rotate(359deg);
     }
 }
+.moon {
+    width: 18px;
+    height: 18px;
+    animation: rotation_alternate 1.5s infinite linear;
+    animation-direction: alternate; 
+}
+@keyframes rotation_alternate {
+    from {
+      transform: rotate(-10deg);
+    }
+    to {
+      transform: rotate(15deg);
+    }
+}
 #clock {
     font-size: 14px;
     font-weight: 500;
@@ -52,28 +66,28 @@ h1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;
-    margin: 80px 0;
+    margin: 80px 0 40px 0;
 }
 .project {
     overflow: hidden;
 }
 .projects img {
     transform: scale(1.0);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-out;
 }
 .projects img:hover {
     transform: scale(1.03);
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-out;
 }
-.text_container3 {
+.text_container {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     margin: 24px 0px 40px 0px
 }
-h3 {
+h2 {
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
 }
 .body1 {
     font-weight: 400;

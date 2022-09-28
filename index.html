@@ -54,7 +54,6 @@
                     function setTimeIcon() {
                         var time = new Date();
                         var dayHours = time.getHours() > 6 && time.getHours() < 19 ? "sun" : "moon";
-                        console.log(dayHours);
                         dayImage.src = `./image/main/${dayHours}.svg`;
                         dayImage.className = dayHours
                     }

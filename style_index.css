@@ -6,8 +6,16 @@
 h1 {
     font-size: 24px;
     font-weight: 500;
-    animation: slideUp 0.5s ease-in-out;
+    animation: slideUp 0.5s ease-in-out forwards;
+    /* forwards 마지막 상태 유지 */
     padding-bottom: 4px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+h1:nth-child(2) {
+    animation-delay: .2s;
+}
+h1:nth-child(3) {
+    animation-delay: .4s;
 }
 @keyframes slideUp {
     0% {
@@ -94,4 +102,7 @@ h2 {
     font-size: 15px;
     line-height: 150%;
     color: #555;
+}
+.img_frame {
+    overflow: hidden;
 }

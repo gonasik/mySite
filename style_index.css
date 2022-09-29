@@ -7,7 +7,7 @@ h1 {
     font-size: 24px;
     font-weight: 400;
     line-height: 140%;
-    animation: slideUp 0.5s ease-in-out forwards;
+    animation: slideUp 0.6s ease-in-out forwards;
     /* forwards 마지막 상태 유지 */
     padding-bottom: 4px;
     clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
@@ -56,7 +56,7 @@ h1:nth-child(3) {
 }
 @keyframes rotation_alternate {
     from {
-      transform: rotate(-12deg);
+      transform: rotate(-15deg);
     }
     to {
       transform: rotate(15deg);

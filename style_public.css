@@ -3,19 +3,6 @@
     margin: 0;
     padding: 0;
 }
-@font-face {
-    font-family: 'Pretendard' sans-serif;
-    src: url(./pretendard/web/static/woff/Pretendard-Black.woff) format(woff),
-        url(./pretendard/web/static/woff/Pretendard-Bold.woff) format(woff),
-        url(./pretendard/web/static/woff/Pretendard-ExtraBold.woff) format(woff),
-        url(./pretendard/web/static/woff/Pretendard-ExtraLight.woff) format(woff),
-        url(./pretendard/web/static/woff/Pretendard-Light.woff) format(woff),
-        url(./pretendard/web/static/woff/Pretendard-Light.woff) format(woff),
-        url(./pretendard/web/static/woff/Pretendard-Medium.woff) format(woff),
-        url(./pretendard/web/static/woff/Pretendard-Regular.woff) format(woff),
-        url(./pretendard/web/static/woff/Pretendard-SemiBold.woff) format(woff),
-        url(./pretendard/web/static/woff/Pretendard-Thin.woff) format(woff);
-}
 body {
     margin: auto;
     max-width: 960px;

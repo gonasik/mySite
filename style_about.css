@@ -31,6 +31,13 @@ h1 {
     line-height: 160%;
     margin-bottom: 16px;
 }
+.links {
+    display: flex;
+    align-items: center;
+}
+.links a {
+    margin-right: 16px;
+}
 button {
     background-color: #000;
     border: none;

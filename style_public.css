@@ -49,6 +49,9 @@ a:hover {
     .navi_top {
         height: 80px;
     }
+    .menus {
+        gap: 24px;
+    }
     .footer {
         height: 80px;
     }

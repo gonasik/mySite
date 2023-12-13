@@ -94,6 +94,10 @@ li::before {
     margin-right: 8px;
     vertical-align: middle;
 }
+.external_link, .external_link:visited, .external_link:hover, .external_link:active {
+    color: #555;
+    text-decoration: underline;
+}
 @media screen and (max-width: 600px) {
     h1 {
         margin-top: 40px;

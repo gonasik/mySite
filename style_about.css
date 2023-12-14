@@ -33,17 +33,16 @@ h1 {
 }
 .links {
     display: flex;
-    align-items: center;
-}
-.links a {
-    margin-right: 16px;
+    gap: 16px;
+    height: 40px;
 }
 button {
     background-color: #000;
     border: none;
     border-radius: 22px;
     color: white;
-    padding: 12px 20px;
+    padding: 0px 20px;
+    height: 40px;
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;

@@ -113,14 +113,15 @@ button {
     justify-content: center;
     align-items: center;
 }
-.grid {
+.video_grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
     justify-items: center;
 }
-.img_container > * {
-    border-radius: 32px;
+.videos {
+    border-radius: 40px;
+    border: 8px solid black;
 }
 @media screen and (max-width: 600px) {
     h1 {

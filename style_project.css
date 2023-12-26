@@ -119,7 +119,7 @@ button {
     gap: 16px;
     justify-items: center;
 }
-.grid > * {
+.img_container > * {
     border-radius: 32px;
 }
 @media screen and (max-width: 600px) {

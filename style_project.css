@@ -133,4 +133,17 @@ button {
     .contents {
         gap: 160px;
     }
+    .video_grid {
+        display: flex;
+        overflow-x: scroll;
+        gap: 20px;
+    }
+    .video_grid::-webkit-scrollbar {
+        display: none;
+    }
+    .videos {
+        height: 400px;
+        border-radius: 32px;
+        border: 6px solid black;
+    }
 }

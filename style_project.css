@@ -116,7 +116,11 @@ button {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 32px;
+    gap: 16px;
+    justify-items: center;
+}
+.grid > * {
+    border-radius: 32px;
 }
 @media screen and (max-width: 600px) {
     h1 {

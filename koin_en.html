@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0JFK5VNMZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-J0JFK5VNMZ');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwansik Nam</title>
+    <link rel="icon" type="image/x-icon" href="./image/main/favicon.ico">
+    <link rel="stylesheet" href="./style_public.css">
+    <link rel="stylesheet" href="./style_project.css">
+</head>
+
+<body>
+    <div class="navi_top">
+        <a href="https://kwansik.com/">
+            <img src="./image/main/profile.svg" width="40px" height="40px">
+        </a>
+        <div class="menus">
+            <a href="https://kwansik.com/">Projects</a>
+            <a href="https://velog.io/@snack" target="_blank">Development</a>
+            <a href="./about.html">About</a>
+            <a href="./koin.html">한국어</a>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="content">
+            <div class="text_container">
+                <h1>KOIN Project &nbsp;—&nbsp; Improving Food Order Usability</h1>
+                <div class="body1">KOIN is a community platform service for students at Korea University of Technology and Education, providing various services needed by students, such as nearby stores, bus/transportation, and timetables. Among these, we improved the usability of the Nearby Stores service, which provides information on various stores around the school where students can order food.</div>
+            </div>
+            <img src="./image/koin/img_1.jpg" width="100%">
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Inconvenient Order Process</h2>
+                <div class="body1">Although the information on the nearby stores was well-organized, actual users I met during school life still found it difficult to find the store and menu information they wanted and order food.</div>
+            </div>
+            <div class="img_container"><img src="./image/koin/img_2.jpg" width="100%"><div class="img_title">Nearby Stores screen before improvement</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container2">
+                <h2>Setting Hypotheses and KPIs</h2>
+                <div class="text_container3">
+                    <h3>Hypothesis Setting</h3>
+                    <div class="body1">'If users can quickly find the information they want, the time taken to order food will be reduced.'</div>
+                </div>
+                <div class="text_container3">
+                    <h3>KPI Setting</h3>
+                    <div class="body1">Total time taken for the user to press the call button on the Nearby Stores page (task completion time)</div>
+                </div>
+                <div class="text_container3">
+                    <h3>KPI Measurement</h3>
+                    <div class="body1">Using the Firebase tool, events were set, and user data was collected for about a month, considering the following:
+                        <ol>
+                            <li>Exclude cases where users move to other services (or main) pages from the Nearby Stores page</li>
+                            <li>Include the movement time in cases where users move from one detailed page to another</li>
+                            <li>The final result is calculated as the average of all user measurements</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="img_container"><img src="./image/koin/img_3.jpg" width="100%"><div class="img_title">Adding Firebase Events</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Analysis of Similar Services</h2>
+                <div class="body1">By experiencing the process of ordering food through delivery apps offering similar services, we analyzed their strengths, weaknesses, and differences, and used these insights for service improvement.</div>
+            </div>
+            <img src="./image/koin/img_4.jpg" width="100%">
+            <div class="grid_container">
+                <div class="app_container">
+                    <div class="title_container">
+                        <img src="./image/koin/app_1.png" width="48px" height="48px"><h3>Baemin</h3>
+                    </div>
+                    <div class="text_container4">
+                        <div class="text_container3">
+                            <h3>Strengths</h3>
+                            <div class="body1">Provides labels like coupons and packaging in the restaurant list, making information easily accessible.</div>
+                        </div>
+                        <div class="text_container3">
+                            <h3>Weaknesses</h3>
+                            <div class="body1">Duplicate listings of the same restaurant can confuse users during selection.</div>
+                        </div>
+                        <div class="text_container3">
+                            <h3>Differentiation</h3>
+                            <div class="body1">Provides separate tabs for packaging/visit orders, offering services that respond to COVID-19 situations.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app_container">
+                    <div class="title_container">
+                        <img src="./image/koin/app_2.png" width="48px" height="48px"><h3>Yogiyo</h3>
+                    </div>
+                    <div class="text_container4">
+                        <div class="text_container3">
+                            <h3>Strengths</h3>
+                            <div class="body1">Increases accessibility by placing discounted restaurants at the top of the list.</div>
+                        </div>
+                        <div class="text_container3">
+                            <h3>Weaknesses</h3>
+                            <div class="body1">The UI for filtering the list is small, and too many options can inconvenience users.</div>
+                        </div>
+                        <div class="text_container3">
+                            <h3>Differentiation</h3>
+                            <div class="body1">Configures the home screen with stores under various themes to help users easily find desired restaurants.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Two Types of Users</h2>
+                <div class="body1">Before improving the service, we categorized users who use Nearby Stores into two types and considered what experiences each type of user needed.</div>
+            </div>
+            <div class="text_container2">
+                <div class="text_container3">
+                    <h3>Users with Specific Stores in Mind</h3>
+                    <div class="body1">Users who have a specific store in mind and want to quickly find and order from that store.</div>
+                </div>
+                <div class="text_container3">
+                    <h3>Users Browsing Without Specific Stores</h3>
+                    <div class="body1">Users who browse various stores without a specific store in mind and want to order food.</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Store Search (For Users with Specific Stores)</h2>
+                <div class="body1">For users with a specific store in mind, the most important thing is to quickly get the information they want. Therefore, we added a search function that allows direct and intuitive exploration. When users press the store search button, they are taken to a separate search page that supports real-time search, enabling them to quickly find the store they want.</div>
+            </div>
+            <div class="img_container">
+                <img src="./image/koin/img_5.jpg" width="100%"><div class="img_title">Adding Search Function</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Store Recommendations (For Users Browsing Without Specific Stores)</h2>
+                <div class="body1">For users without a specific store in mind, it is important to comfortably browse various stores while finding the desired menu. The improved detailed page collapses some of the menu under the [View More Menu] button and recommends other stores in the same category to shorten the flow of browsing other stores.</div>
+            </div>
+            <div class="img_container">
+                <img src="./image/koin/img_6.jpg" width="100%"><div class="img_title">Adding Store Recommendations</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Flyer Images</h2>
+                <div class="body1">Users wanted to intuitively view flyers along with organized menus. To solve this, we collected flyer images of nearby stores with club members and provided a UI to view them separately from the menu information. Users can click on thumbnails to view larger images and zoom in or out.</div>
+            </div>
+            <div class="img_container">
+                <img src="./image/koin/img_7.jpg" width="100%"><div class="img_title">Adding Flyer Tab</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Store Opening Status</h2>
+                <div class="body1">There were cases where users found a store and moved to the detailed page, only to find that the store was not open yet and had to go back to the previous screen. To eliminate this unnecessary flow, stores that are not yet open based on the current time are marked as 'Preparing' and sorted at the bottom of the list.</div>
+            </div>
+            <div class="img_container">
+                <img src="./image/koin/img_8.jpg" width="100%"><div class="img_title">Adding Store Opening Status</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Call Button</h2>
+                <div class="body1">Users had to scroll down to the bottom of the screen to view the menu and then scroll back up to press the call button to place an order. To alleviate this inconvenience and allow faster ordering, we fixed the call button in the form of a floating action button at the bottom of the screen.</div>
+            </div>
+            <div class="img_container">
+                <img src="./image/koin/img_9.jpg" width="100%"><div class="img_title">Changing Call Button</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Final Design After Improvement</h2>
+                <div class="body1">We updated the app with the following design improvements: store search, store recommendations, flyer images, store opening status, and call button.</div>
+            </div>
+            <img src="./image/koin/img_10.jpg" width="100%">
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Hypothesis Verification</h2>
+                <div class="body1">To verify the hypothesis set before the design improvement ('If users can quickly find the information they want, the time taken to order food will be reduced.'), we observed the KPI (task completion time) before and after the improvement. As a result, the time taken for users to order food was significantly reduced by about 44%, validating the hypothesis.</div>
+            </div>
+            <img src="./image/koin/img_11.jpg" width="100%">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">ⓒ Kwansik Nam 2024</div>
+        <div class="menus">
+            <a href="https://kwansik.com/">Projects</a>
+            <a href="https://velog.io/@snack" target="_blank">Development</a>
+            <a href="./about.html">About</a>
+        </div>
+    </div>
+</body>
+</html>

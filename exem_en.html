@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J0JFK5VNMZ"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-J0JFK5VNMZ');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwansik Nam</title>
+    <link rel="icon" type="image/x-icon" href="./image/main/favicon.ico">
+    <link rel="stylesheet" href="./style_public.css">
+    <link rel="stylesheet" href="./style_project.css">
+</head>
+
+<body>
+    <div class="navi_top">
+        <a href="https://kwansik.com/">
+            <img src="./image/main/profile.svg" width="40px" height="40px">
+        </a>
+        <div class="menus">
+            <a href="https://kwansik.com/">Projects</a>
+            <a href="https://velog.io/@snack" target="_blank">Development</a>
+            <a href="./about.html">About</a>
+            <a href="./exem_en.html">English</a>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="content">
+            <div class="text_container">
+                <h1>exemONE &nbsp;—&nbsp; Improvement of One Design System</h1>
+                <div class="body1">exemONE is a database performance management service with a somewhat complex concept and structure, requiring efficient design system management due to its numerous design elements. This project aimed to improve the inefficiencies and visual issues of the design system, establishing a comfortable production environment and enhancing the product's completeness.</div>
+            </div>
+            <img src="./image/exem/img_1.jpg" width="100%">
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Issues with the Existing Design System</h2>
+                <div class="body1">The various design elements of exemONE are managed based on the internally built One Design System. However, the existing design system had maintenance and usability issues due to an inefficient component structure and inconsistent color palette.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_2.jpg" width="100%"><div class="img_title">Service screen of exemONE</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Low Usability and Difficult Maintenance of Existing Component Structure</h2>
+                <div class="body1">The existing components were not separated, requiring organization of all possible states. This structure caused inconvenience in using components and was a major factor hindering maintenance and work speed.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_3.jpg" width="100%"><div class="img_title">Existing Dropdown component with all cases organized</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Modularization of Component Elements</h2>
+                <div class="body1">Separated parts that could be divided into different components were modularized, and each design element used within the component was optionized. The modular design elements could be adjusted at the top component level using the Nested Instances feature, enhancing usability.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_4.jpg" width="100%"><div class="img_title">Modular component structure</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Convenient Usability and Easy Maintenance</h2>
+                <div class="body1">The modular structure allowed all situations to be expressed with a few clicks, making components convenient to use during design work. Additionally, with fewer variants and the need to only modify necessary parts, maintenance became much more efficient than the existing structure.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_5.jpg" width="100%"><div class="img_title">Appearance when using components with fewer variants</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Structural Improvement According to Component Characteristics</h2>
+                <div class="body1">Used the Instance Swap feature to structure components differently according to their characteristics. This structure significantly improved usability during design work by allowing icon changes while viewing images, rather than text, when changing the icon type of the Icon Button component.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_6.jpg" width="100%"><div class="img_title">Improved component allowing icon changes while viewing images</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Improved Memory Management</h2>
+                <div class="body1">Memory management was crucial for the design files of exemONE, which has many separate screens and design elements. With the improvement of all component structures, the overall number of variants decreased, greatly aiding in the memory management of the entire design file.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_7.jpg" width="100%"><div class="img_title">Improved memory management with reduced number of variants</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Inefficient Color Work for Each Theme</h2>
+                <div class="body1">In the existing system, when designing a screen, color work had to be done twice, once for the light theme and once for the dark theme. This doubled the work time and caused difficulties in managing both themes during design revisions due to unnecessary repetition.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_8.jpg" width="100%"><div class="img_title">Existing work method requiring color work twice for each theme</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Work Efficiency Through Token Management for Each Theme</h2>
+                <div class="body1">Defined all colors used in dark and light themes using the Variables feature and managed the colors of each theme as a single token. This allowed handling of color work for both themes simultaneously, saving work time and improving maintenance efficiency.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_9.jpg" width="100%"><div class="img_title">Token management using the Variables feature</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Low Usability and Consistency of Existing Color Palette</h2>
+                <div class="body1">The existing color palette had unnecessary stages and inconsistent brightness of colors. During design work, the process of applying several stages to find colors of the same brightness was repeated, which hindered the visual consistency of the service.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_10.jpg" width="100%"><div class="img_title">Existing color palette with inconsistent brightness at the same stage</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Color Palette Allowing Clear Status Representation</h2>
+                <div class="body1">The newly adjusted color palette with reduced unnecessary stages had consistent brightness at each stage, improving usability and visual consistency during design. The overall tone of the colors was also improved, allowing clear representation of system statuses.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_11.jpg" width="100%"><div class="img_title">Improved color palette with consistent tone and brightness</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>System Development as a Library</h2>
+                <div class="body1">The improved color palette was also organized and managed as theme-specific tokens. These tokens were shared with the development team in JSON format, allowing them to be self-librarized, reducing work time and maintenance costs during development.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_12.jpg" width="100%"><div class="img_title">Theme-specific color tokens and JSON code</div></div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Design System from a Designer's Perspective</h2>
+                <div class="body1">Through this project, the design system of exemONE was reorganized into a more efficient and consistent structure. Moving beyond building the system from a product perspective, identifying and enhancing system issues from the designer's perspective who directly use the system provided a new perspective on viewing design systems.</div>
+            </div>
+            <div class="img_container"><img src="./image/exem/img_13.jpg" width="100%"><div class="img_title">Improved exemONE design system</div></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copyright">ⓒ Kwansik Nam 2024</div>
+        <div class="menus">
+            <a href="https://kwansik.com/">Projects</a>
+            <a href="https://velog.io/@snack" target="_blank">Development</a>
+            <a href="./about.html">About</a>
+        </div>
+    </div>
+</body>
+</html>

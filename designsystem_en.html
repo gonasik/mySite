@@ -28,51 +28,124 @@
             <a href="https://kwansik.com/">Projects</a>
             <a href="https://velog.io/@snack" target="_blank">Development</a>
             <a href="./about.html">About</a>
-            <a href="./designsystem_en.html">English</a>
+            <a href="./designsystem.html">한국어</a>
         </div>
     </div>
     <div class="contents">
         <div class="content">
             <div class="text_container">
-                <h1>Orbro &nbsp;—&nbsp; Web Design System Establishment</h1>
-                <div class="body1">Built a web design system for Orbro, a digital twin platform service. The design system was optimized to enhance user interaction and visual consistency across various interfaces within the platform.</div>
+                <h1>Orbro &nbsp;—&nbsp; Establishment of Design System</h1>
+                <div class="body1">This project involved defining the design concepts for the location-based digital twin platform, Orbro, and building the corresponding design patterns and system. This design system is continually being updated and improved, facilitating communication among designers, developers, and all team members involved in the product.</div>
             </div>
             <img src="./image/designsystem/img_1.jpg" width="100%">
         </div>
         <div class="content">
+            <div class="text_container2">
+                <h2>Why is a Design System Needed?</h2>
+                <div class="text_container3">
+                    <h3>Diverse Products and External Developer Support</h3>
+                    <div class="body1">Orbro has multiple product lines, and external developers can develop services as plugins. In such a diverse environment, it was extremely challenging to provide a consistent user experience without a standard guideline.</div>
+                </div>
+                <div class="text_container3">
+                    <h3>Work Efficiency</h3>
+                    <div class="body1">Orbro involves repetitive patterns such as collecting and processing data, analyzing collected data, and visualizing it. Repeating these patterns for each project required substantial work time, reducing project productivity.</div>
+                </div>
+                <div class="text_container3">
+                    <h3>Communication Among Team Members</h3>
+                    <div class="body1">As the team grew, different interpretations of terms and concepts emerged, hampering project productivity. A guideline was needed to aid communication among all team members, including designers, developers, and other stakeholders involved in the product.</div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
             <div class="text_container">
-                <h2>Component-Based Design</h2>
-                <div class="body1">Developed a component-based design approach to ensure reusability and consistency. This approach allowed for efficient management and scaling of the design elements across different modules of the platform.</div>
+                <h2>Design Principles as the Basis of the System</h2>
+                <div class="body1">Before establishing the design system, we understood the Orbro service environment and defined design principles to respond to it. These design principles served as a basis for decision-making during the design system's construction and helped establish Orbro's unique design philosophy.</div>
             </div>
             <img src="./image/designsystem/img_2.jpg" width="100%">
         </div>
         <div class="content">
             <div class="text_container">
-                <h2>Responsive and Adaptive Layouts</h2>
-                <div class="body1">Implemented responsive and adaptive layouts to provide optimal viewing experiences across a wide range of devices. This involved designing flexible grid systems and media queries to adjust the interface dynamically.</div>
+                <h2>Functional Definition of Components</h2>
+                <div class="body1">We selected design components used in the current service based on high reusability criteria and redefined their functions. We analyzed and organized each component according to its variations (Variant), anatomy (Anatomy), and state (State).</div>
             </div>
             <img src="./image/designsystem/img_3.jpg" width="100%">
         </div>
         <div class="content">
             <div class="text_container">
-                <h2>Color and Typography Guidelines</h2>
-                <div class="body1">Established color and typography guidelines to maintain visual harmony and accessibility. The guidelines included color palettes for different contexts and typographic scales for various text elements.</div>
+                <h2>Component UX Guidelines</h2>
+                <div class="body1">In previous design work, the same component was often used for different functions or different components were used in similar situations, compromising service consistency. To address this, we specified the functional definitions of all components, documented their usage, variations, and considerations, and created UX guidelines.</div>
             </div>
-            <img src="./image/designsystem/img_4.jpg" width="100%">
+            <div class="img_container"><img src="./image/designsystem/img_4.jpg" width="100%"><div class="img_title">Component Usage, Variants</div></div>
+            <div class="img_container"><img src="./image/designsystem/img_5.jpg" width="100%"><div class="img_title">Component Behavior</div></div>
         </div>
         <div class="content">
             <div class="text_container">
-                <h2>Interactive Prototypes and User Testing</h2>
-                <div class="body1">Created interactive prototypes to test and validate design concepts. Conducted user testing sessions to gather feedback and iterate on the design, ensuring it met user needs and expectations.</div>
+                <h2>Component UI Guidelines</h2>
+                <div class="body1">With multiple designers working on the team, there were instances where the same component was designed differently or appeared differently in various situations, reducing service consistency and development efficiency. To resolve this, we defined the interface components and appearance of all components and documented their expressions for various situations.</div>
             </div>
-            <img src="./image/designsystem/img_5.jpg" width="100%">
+            <div class="img_container"><img src="./image/designsystem/img_6.jpg" width="100%"><div class="img_title">Component Anatomy, States, Specs</div></div>
         </div>
         <div class="content">
             <div class="text_container">
-                <h2>Documentation and Design Tokens</h2>
-                <div class="body1">Documented the design system extensively, including guidelines, best practices, and design tokens. The documentation served as a reference for developers and designers, facilitating consistent implementation across the platform.</div>
+                <h2>Typography Optimized for Data</h2>
+                <div class="body1">Orbro's previous font system used 'Noto Sans CJK KR' for web and Android environments and 'Apple SD Gothic Neo' for iOS. Using two different fonts required double the work and constant adjustment for layout changes due to slight font differences, decreasing team productivity. To solve this, we decided to unify the fonts.</div>
             </div>
-            <img src="./image/designsystem/img_6.jpg" width="100%">
+            <div class="img_container"><img src="./image/designsystem/img_7.jpg" width="100%"><div class="img_title">Typography Organization</div></div>
+            <div class="body1">Thus, Orbro's new font system uses 'Spoqa Han Sans Neo'. This font is free for commercial use and provides consistent usability across web, mobile (iOS/Android) environments. Additionally, it offers excellent readability, especially for numerical data, which is frequently used in the service. Typography was categorized into 'Title', 'Body', 'Caption' based on usage, and organized by size and weight, then documented.</div>
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Color System and Semantic Color Tokens</h2>
+                <div class="body1">We defined and organized the main colors (Gray and Blue) and supplementary colors (Red, Orange, Yellow, Green, Teal, Light Blue, Indigo, Purple) used in the system into a color palette based on brightness. Frequently repeated colors in design work were selected and documented as semantic color tokens along with their usage purposes.</div>
+            </div>
+            <img src="./image/designsystem/img_8.jpg" width="100%">
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Icons Representing the Brand</h2>
+                <div class="body1">Icons used in the design system were designed in collaboration with a BX designer, considering the overall branding of the service. Icons were categorized into five types: Arrow, UI, Object, Status, and System. Designed following the defined design principles, they are simple, effectively convey meaning, and represent the brand concept.</div>
+            </div>
+            <img src="./image/designsystem/img_9.jpg" width="100%">
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>Responsive Layouts Considering Data Types</h2>
+                <div class="body1">We established a 4px grid system and a 16-column layout grid for consistent service design. This layout accommodates card-shaped responsive designs when resizing the browser and provides guidelines for data tables and graph representations.</div>
+            </div>
+            <img src="./image/designsystem/img_10.jpg" width="100%">
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>System Assetization for Efficient Design Work</h2>
+                <div class="body1">We organized all design system elements—components, typography, colors, icons—into assets in the Figma working environment. These assets allowed all designers on the team to quickly use the same design elements when needed, significantly improving design work efficiency.</div>
+            </div>
+            <img src="./image/designsystem/img_11.jpg" width="100%">
+        </div>
+        <div class="content">
+            <div class="text_container">
+                <h2>System Library for Efficient Development Work</h2>
+                <div class="body1">We shared the assets and documents of the design system with the development team, allowing them to understand the system's concepts and context. Organizing it as a development library also increased efficiency in the development process.</div>
+            </div>
+            <img src="./image/designsystem/img_12.jpg" width="100%">
+        </div>
+        <div class="content">
+            <div class="text_container2">
+                <h2>Reflections on Establishing the Design System</h2>
+                <div class="text_container3">
+                    <h3>Opportunity to Understand Overall UI</h3>
+                    <div class="body1">Establishing the design system provided a valuable opportunity to understand the functions and roles of UI components and the contexts in which they are used. This understanding helped clarify ambiguous aspects of the design process and reduce unnecessary considerations.</div>
+                </div>
+                <div class="text_container3">
+                    <h3>Organization-Wide Understanding and Agreement on the Product</h3>
+                    <div class="body1">Collaborating with various teams on the project allowed us to understand how the elements built into the design system were implemented and impacted the service, fostering organization-wide understanding and continuous communication to suggest better directions for the system.</div>
+                </div>
+                <div class="text_container3">
+                    <h3>Need for Continuous Improvement</h3>
+                    <div class="body1">As the design system was built early in the service development and alongside service design, there were discrepancies between the service and the system as the project progressed. To resolve this, we continuously identify and improve system issues during the design process through discussions and collaboration.</div>
+                </div>
+            </div>
+            <img src="./image/designsystem/img_13.jpg" width="100%">
+            <div class="img_container"><img src="./image/designsystem/img_14.jpg" width="100%"><div class="img_title">Screen Applying the Design System</div></div>
         </div>
     </div>
     <div class="footer">

@@ -29,6 +29,7 @@ a:hover {
 .menus {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 40px;
 }
 .menus > * {
